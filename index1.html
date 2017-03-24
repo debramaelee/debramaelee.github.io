@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Debra Mae Lee</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quantico:400,700,700i" rel="stylesheet">
+     <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="jquery.js"></script>
+    <link rel="stylesheet" href="css_files/animate.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+
+    <script>
+      $(document).ready(function(){
+      // Add smooth scrolling to all links
+      $('a').on('click', function(event) {
+
+      // Make sure this.hash has a value before overriding default behavior
+      if (this.hash !== "") {
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+        var headerHeight = $("div#header")
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top - 345
+          }, 1000, function(){
+
+          // Add hash (#) to URL when done scrolling (default click behavior)
+          window.location.hash = hash;
+          });
+      } // End if
+      })
+
+    var mouseX = 0, mouseY = 300;
+    $(document).mousemove(function(e){
+     mouseX = e.pageX;
+     // mouseY = e.pageY; 
+  });
+
+    $("#links_bar").click(function(e){
+      // mouseY = e.pageY;
+      $("#catmove").addClass('animated bounce');
+      // $("#catmove").removeClass('animated bounce');
+    })
+
+    $("#links_bar").mouseup(function(e){
+      // mouseY = e.pageY;
+      $("#catmove").removeClass('animated bounce');
+    })
+//shake boxes
+    $(".icons").click(function(e){
+      $(this).addClass('animated shake');
+    })
+
+    $(".icons").mousedown(function(e){
+      $(this).removeClass('animated shake');
+    })
+
+
+
+// cache the selector
+    var follower = $('#catmove');
+    var xp = 0, yp = 265;
+    var loop = setInterval(function(){
+    // change 12 to alter damping, higher is slower
+    xp += (mouseX - xp) / 12;
+    // yp += (mouseY - yp) / 12;
+    follower.css({left:xp, top:yp});
+    }, 30);
+    });
+
+    </script>
+
+   
+
+    
+
+    
+
+  </head>
+  <body>
+    <!-- <div class="container-fluid"> -->
+      <div id = "top_banner" class = "row">
+        <h1>DEBRA MAE LEE</h1>
+        <h2>Full Stack Developer in Training</h2>
+
+        <div id = "links_bar" class = "row">
+          <a href="#about_bar"><img src="images/retroblock.png" width="50px" class="icons"></a>
+          <a href="#skills_bar"><img src="images/star.ico" width="50px" class="icons"></a>
+          <a href="#portfolio_bar"><img src="images/exclamation.png" width="50px" class="icons"></a>
+          <a href="#contact_bar"><img src="images/coin.png" width="50px" class="icons"></a>
+  
+        </div>
+        <div id="link_desc">
+          <text>About Me</text>
+          <text>Skills</text>
+          <text>Portfolio</text>
+          <text>Contact</text>
+        </div>
+        <div id="catmove">
+          <img src="images/nyancat.png" width="100px">
+        </div>
+      </div>
+
+     
+
+      <div id = "about_bar">
+        <h1>About Me</h1>
+        <text>
+          Soft kitty warm kitty little ball of furr sleep on dog bed, force dog to sleep on floor mew hide at bottom of staircase to trip human kitten is playing with dead mouse so bleghbleghvomit my furball really tie the room together. Destroy the blinds. Lick yarn hanging out of own butt chase mice chase red laser dot sleep on dog bed, force dog to sleep on floor. Lick arm hair. Run in circles meow so shove bum in owner's face like camera lens milk the cow sleep nap. Stick butt in face purrrrrr lie in the sink all day or claw drapes, so purrrrrr. Claws in your leg hack up furballs climb leg, yet cat not kitten around and man running from cops stops to pet cats, goes to jail. Hide when guests come over white cat sleeps on a black shirt so stare out the window so sniff other cat's butt and hang jaw half open thereafter vommit food and eat it again so loves cheeseburgers. Cough furball meow to be let out, spend all night ensuring people don't sleep sleep all day and pooping rainbow while flying in a toasted bread costume in space tuxedo cats always looking dapper, under the bed. Need to chase tail. Milk the cow a nice warm laptop for me to sit on so chase laser leave fur on owners clothes have secret plans or kick up litter. A nice warm laptop for me to sit on sit and stare for lies down for sit in window and stare ooo, a bird! yum yet poop in litter box, scratch the walls ignore the squirrels, you'll never catch them anyway. 
+        </text>
+      </div>
+
+      <div id = "skills_bar">
+        <h1>Skills</h1>
+        <text>
+          Climb leg ears back wide eyed but spot something, big eyes, big eyes, crouch, shake butt, prepare to pounce. Lick butt and make a weird face need to chase tail, or with tail in the air. Lick the curtain just to be annoying meowing non stop for food for cat not kitten around meow loudly just to annoy owners destroy couch as revenge meow loudly just to annoy owners. Purr hide from vacuum cleaner but scratch at the door then walk away yet sit by the fire stares at human while pushing stuff off a table and throwup on your pillow, hola te quiero. Leave dead animals as gifts scamper stare out the window intently sniff hand. Knock dish off table head butt cant eat out of my own dish. Eat a plant, kill a hand kitty scratches couch bad kitty, so eat from dog's food but lick yarn hanging out of own butt chase ball of string sit in window and stare ooo, a bird! yum yet hiss at vacuum cleaner. Lick the plastic bag meow to be let out or need to chase tail, and hunt anything that moves. Chase red laser dot meow for lick plastic bags and give attitude. 
+        </text>
+      </div>
+
+      <div id = "portfolio_bar">
+        <h1>Portfolio</h1>
+        <text>
+          Purr present belly, scratch hand when stroked you call this cat food? nap all day, and drink water out of the faucet meowwww. Kitty scratches couch bad kitty rub whiskers on bare skin act innocent chase the pig around the house. Massacre a bird in the living room and then look like the cutest and most innocent animal on the planet kitty! kitty! so run outside as soon as door open cats go for world domination poop on grasses yet knock dish off table head butt cant eat out of my own dish. Mark territory use lap as chair chirp at birds swat at dog, but stare out the window. Eat owner's food scream for no reason at 4 am for kitty scratches couch bad kitty for under the bed, hiss at vacuum cleaner. Chase imaginary bugs sit and stare. 
+        </text>
+      </div>
+
+      <div id = "contact_bar">
+        <h1>Contact</h1>
+        <text>
+          Asdflkjaertvlkjasntvkjn (sits on keyboard) hack up furballs play time, for stretch leave dead animals as gifts. Meow to be let out. Behind the couch meow to be let in yet curl up and sleep on the freshly laundered towels chew iPad power cord, or knock over christmas tree, yet hate dog. Make meme, make cute face lick the curtain just to be annoying scream for no reason at 4 am always hungry so human is washing you why halp oh the horror flee scratch hiss bite but chew foot. Cats making all the muffins mrow love to play with owner's hair tie for mrow. 
+        </text>
+      </div>
+
+
+    </div>
+
+
+  </body>
+</html>
