@@ -75,11 +75,11 @@
       $("#catmove").removeClass('animated bounce');
     })
 //shake boxes
-    $(".icons").click(function(e){
+    $(".icons img").click(function(e){
       $(this).addClass('animated shake');
     })
 
-    $(".icons").mousedown(function(e){
+    $(".icons img").mousedown(function(e){
       $(this).removeClass('animated shake');
     })
 
@@ -136,129 +136,125 @@
       <div class="sections">
       <div id = "about_bar">
         <h1>About Me</h1>
-        <img src="images/cat.jpg" width="250px" height="250px">
+        <!-- <img src="images/cat.jpg" width="250px" height="250px"> -->
         <text>
-          Hello, my name is Debra and welcome to my website! I moved from Los Angeles, California to Atlanta, Georgia in 2016. After coming from a background of working extensively in Digital Marketing, e-Commerce, and Analytics, I decided to dive head first into programming. Now, I'm coding every day as a full stack developer studying at <a href="http://digitalcrafts.com" target="_blank">DigitalCrafts</a>, an immersive 16-week web development bootcamp focused on Javascript and Python. I am also taking an additional elective where I am learning Computer Science Fundamentals. I will be graduating from this program at the end of May 2017 and look forward to any opportunities that will come my way.<br><br>
+          Hello, my name is Debra and welcome to my website! I moved from Los Angeles, California to Atlanta, Georgia in 2016. After coming from a background of working extensively in Digital Marketing, e-Commerce, and Analytics, I decided to dive head first into programming. Now, I'm coding every day as a full stack developer studying at <a href="http://digitalcrafts.com" target="_blank">DigitalCrafts</a>, an immersive 16-week web development bootcamp focused on Javascript and Python. I am also taking an additional elective where I am learning Computer Science Fundamentals. I will be graduating from this program in the beginning of June 2017 and look forward to any opportunities that will come my way.<br><br>
           When I'm not writing code, you can usually find me exploring Atlanta, playing video games, or spending time at home with my two guinea pigs. I am always learning new things and seeking new challenges along the way, and I hope that is reflected in the progress of my work as I aspire to become a software developer. Please feel free to check out my projects and tell me what you think!
         </text>
       </div>
       </div>
       <div class="sections">
       <div id = "skills_bar">
-      <div>
+      <!-- <div> -->
         <h1>Skills</h1>
         <div id="skill_icons">
 
-            <img src="images/skills/python.sh.png" width="75px">	
-       		<text>Python</text>
+          <div class ="icons">
+            <img src="images/skills/python.sh.png">	
+            <span class="caption">Python</span>
+          </div>
      
-              <img src="images/skills/js4560_450.png" width="75px">
-        	<text>Javascript</text>
-        	
-              <img src="images/skills/jquery-icon.png" height="75px">
-     		<text>jQuery</text>
-              <img src="images/skills/html_logo.png" width="70px">
-    		<text>HTML</text>
-              <img src="images/skills/bootstrap.png" width="60px">
-    		<text>Bootstrap</text>
-              <img src="images/skills/css.png" width="75px">
-     		<text>CSS</text>
-              <img src="images/skills/nodejs-logo.png" width="75px">
-             <text>Node.js</text>
-              <img src="images/skills/photoshop.jpg" width="65px">
-            <text>Photoshop</text>
+          <div class="icons">
+            <img src="images/skills/js4560_450.png">
+            <span class="caption">Javascript</span>
+        	</div>
+
+          <div class="icons">
+            <img src="images/skills/jquery-icon.png">
+            <span class ="caption">jQuery</span>
+          </div>
+
+          <div class="icons">
+            <img src="images/skills/html_logo.png">
+    		    <span class="caption">HTML</span>
+          </div>
+
+          <div class="icons">
+            <img src="images/skills/bootstrap.png" style="padding: 3px">
+    		    <span class="caption">Bootstrap</span>
+          </div>
+
+          <div class="icons">
+            <img src="images/skills/css.png">
+            <span class="caption">CSS</span>
+          </div>
+
+          <div class="icons">
+            <img src="images/skills/nodejs-logo.png">
+            <span class="caption">Node.js</span>
+          </div>
+
+          <div class="icons">
+            <img src="images/skills/socketio.png">
+            <span class="caption">Socket.IO</span>
+          </div>
+
+          <div class="icons">
+            <img src="images/skills/sql.png">
+            <span class="caption">SQL</span>
+          </div>
+
+          <div class="icons">
+            <img src="images/skills/ajax.png">
+            <span class="caption">Ajax</span>
+          </div>
+
+          <div class="icons">
+            <img src="images/skills/aws.png">
+            <span class="caption">Amazon Web Services</span>
+          </div>
+
+
+          <div class="icons">
+            <img src="images/skills/photoshop.jpg" style="padding: 2px; border-radius: 6px" >
+            <span class="caption">Photoshop</span>
+          </div>
             
-          </div>
-<!--         <table>
-          <tr>
-            <td>Completed</td>
-            <td>Python</td>
-            <td>Javascript</td>
-            <td>jQuery</td>
-            <td>Node.js</td>
-            <td>HTML5</td>
-            <td>CSS3</td>
-            <td>Bootstrap</td>
-	    <td>PostGreSQL</td>	
-          </tr>
-
-          <tr>
-            <td>In Progress</td>
-            <td>AWS</td>
-            <td>JSON</td>
-            <td>React.js</td>
-            <td>Apache</td>
-            <td>MySQL</td>
-            <td>Express</td>
-            <td>Linux</td>
-          </tr>
-        </table> -->
         </div>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col col-xs-3">
-              Completed
-            </div>
-            <div class="col col-xs-1">
-              <img src="images/skills/python.sh.png" width="75px">
-            </div>
-            <div class="col col-xs-1">
-              <img src="images/skills/js4560_450.png" width="75px">
-            </div>
-            <div class="col col-xs-1">
-              <img src="images/skills/jquery-icon.png" height="75px">
-            </div>
-            <div class="col col-xs-1">
-              <img src="images/skills/html_logo.png" width="70px">
-            </div>
-            <div class="col col-xs-1">
-              <img src="images/skills/bootstrap.png" width="60px">
-            </div>
-            <div class="col col-xs-1">
-              <img src="images/skills/css.png" width="75px">
-            </div>
-            <div class="col col-xs-1">
-              <img src="images/skills/nodejs-logo.png" width="75px">
-            </div>
-          </div>
-
-           <div class="row">
-            <div class="col col-xs-3">
-              In Progress
-            </div>
-            <div class="col col-xs-1">
-              skill 1
-            </div>
-            <div class="col col-xs-1">
-              skill 2
-            </div>
-            <div class="col col-xs-1">
-              skill 3
-            </div>
-            <div class="col col-xs-1">
-              skill 4
-            </div>
-            <div class="col col-xs-1">
-              skill 5
-            </div>
-            <div class="col col-xs-1">
-              skill 6
-            </div>
-            <div class="col col-xs-1">
-              skill 7
-            </div>
-          </div>
-        <!-- </div> -->
-
       </div>
-      </div>
+    </div>
+      
       <div class="sections">
       <div id = "portfolio_bar">
         <h1>Portfolio</h1>
         <div id = "projects">
-        <img src ="images/fireball.png" height="200px">
-        <img src ="images/pixel-card.jpg" height="200px">
-        <img src ="images/tic-tac-toe.png" height="200px">
+        <div class="wrapper">
+          <div class="project_image">
+          <img src ="images/wheelgame.png" height="200px">
+          </div>
+          <div>
+          <h3>Hamster Wheel Game</h3>
+          <p class ="project_desc">
+            This game lets the user play as a jumping hamster to avoid randomly generated obstacles spinning in a wheel. After reaching 200 points, blocks from the opposite direction are generated as well, making the game much more challenging. The hamster is able to jump on or over the blocks safely, but when the hamster hits a block, it's game over. Once that happens, the player's score is appended to a PostgreSQL database, which is used to display the top 10 high scores on the leaderboard. The database stores all the user's usernames, passwords (which are encrypted using bcrypt), and high scores. Languages and technologies used in this project are: JavaScript, jQuery, Node.js, Express, PostgreSQL, Ajax, HTML, and CSS.
+          <br>
+          <a href="http://wheelgame.debramaelee.com/" target="_blank"><strong>Live Demo</strong></a> | <a href="https://github.com/HamsterCorp/hamster-wheel" target="_blank"><strong>GitHub Repo</strong></a>
+          </p>
+          </div>
+          
+          <div class="project_image">
+          <img src ="images/fireball.png" height="200px">
+          </div>
+          <div>
+          <h3>Super Fireball Chicken Revenge Pygame</h3>
+          <p class ="project_desc">
+          As our first project in DigitalCrafts, this Pygame Project reinforced our learning of Python and basic programming logic. In this game, the user controls a chicken using the arrow keys. The chicken must make it across to the end of the map, collecting food items which cause it to increase in size and restore health, while avoiding the wolf. Collision with the wolf will deduct health points from the chicken. At the end of the map, there is a boss which the chicken must defeat using his ability which is triggered by pressing spacebar, which shoots fireballs horizontally. 
+          <br>
+          <strong>Live Demo (unavailable)</strong> | <a href="https://github.com/debramaelee/pygame-project" target="_blank"><strong>GitHub Repo</strong></a>
+          </p>
+          </div>
+          
+          <div class="project_image">
+          <img src ="images/tic-tac-toe.png" height="200px">
+          </div>
+          <div>
+          <h3>Tic Tac Toe</h3>
+          <p class ="project_desc">
+          This is a fully-functioning tic tac toe game which tracks user wins, draws, and losses. Languages and technologies used in this project are: JavaScript, jQuery, HTML, and CSS.
+          <br>
+          <a href="http://tic-tac-toe.debramaelee.com/" target="_blank"><strong>Live Demo</strong></a> | <a href="https://github.com/debramaelee/tic-tac-toe" target="_blank"><strong>GitHub Repo</strong></a>
+          </p>
+          </div>
+        </div>
         </div>
       </div>
       </div>
@@ -266,9 +262,11 @@
       <div class="sections">
       <div id = "resume_bar">
         <h1>Resume</h1>
-        <text>
-          Feel free to reach out to me regarding any projects, opportunities, or anything else. 
-        </text>
+        <text>Please click below to view or download my resume in PDF form.</text>
+        <br>
+          <text>
+          <a href="Debra Lee Resume 2017.pdf" target="_blank"><strong>Resume</strong></a>
+          </text>
       </div>
     </div>
 
@@ -276,7 +274,7 @@
       <div id = "contact_bar">
         <h1>Contact</h1>
         <text>
-          Feel free to reach out to me regarding any projects, opportunities, or anything else. 
+          Feel free to connect with me via <a href="mailto:debramaelee@gmail.com" target="_blank"><strong>Email</strong></a> or <a href="https://www.linkedin.com/in/debra-l-60949a4a/" target="_blank"><strong>LinkedIn</strong></a> regarding any projects, opportunities, or anything else. 
         </text>
       </div>
     </div>
