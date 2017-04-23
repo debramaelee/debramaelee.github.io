@@ -897,3 +897,228 @@
     font-family: arial;
   }
 }
+
+@media screen and (min-width: 1px) and (max-width: 499px) {
+
+  #top_banner {
+    background: url(images/background_crop.jpg);
+    height: 345px;
+    text-align: center;
+    position: fixed;
+    width: 101%;
+    box-sizing: border-box;
+    z-index: 999;
+  }
+
+  #top_banner h1 {
+    font-size: 5em;
+    color: black;
+    font-family: 'Quantico', sans-serif;
+    font-weight: 700;
+  }
+
+  #top_banner h2 {
+    color: black;
+    font-family: 'Quantico', sans-serif;
+    font-weight: 700;
+    font-size: 2em;
+
+  }
+  #top_banner span {
+    background-color: white;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  #about_bar img {
+    border-radius: 100%;
+    float: left;
+    margin: 10px;
+    position: relative;
+    max-width: 100%;
+  }
+
+  #skills_bar img{
+    margin: 0vw 2vw 2vw 2vw;
+  }
+
+  #skills_bar text{
+    margin: 0vw 2vw 2vw 2vw;
+  }
+
+  #skill_icons {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+
+  #projects {
+    width: 100%;
+    text-align: center;
+    position: relative;
+  }
+
+  #projects img {
+    margin: 0vw 2vw 2vw 2vw;
+    border-radius: 5px;
+  }
+
+  .topandbottom {
+    height: 345px;
+
+  }
+
+  .topandbottom img {
+    float: right;
+    margin: 50px;
+
+  }
+
+  .pagebackground {
+    background-color: #39d254;
+  }
+
+  #links_bar img{
+      -webkit-transition: margin 0.2s ease-out;
+      -moz-transition: margin 0.2s ease-out;
+      -o-transition: margin 0.2s ease-out;
+  }
+   
+  #links_bar img:hover {
+      margin-top: -20px;
+  }
+
+  #link_desc text{
+    margin-left: 45px;
+    margin-right: 45px;
+    font-family: 'Quantico', sans-serif;
+  }
+
+  #links_bar img {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 10px;
+  }
+
+  #catmove {
+    position: absolute;
+  }
+
+  #about_bar {
+    background-color: white;
+    margin: 0px 100px 50px 100px;
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 10px 25px 25px 25px;
+  }
+
+  #about_bar h1 {
+    font-family: 'Quantico', sans-serif;
+    font-weight: 700;
+  }
+
+  #skills_bar {
+    background-color: white;
+    margin: 50px 100px 50px 100px;
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 10px 25px 25px 25px;
+  }
+
+  #skills_bar h1 {
+    font-family: 'Quantico', sans-serif;
+    font-weight: 700;
+  }
+
+  div.icons {
+    vertical-align: top;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  div.icons > img {
+    width: 70px;
+    height:70px;
+    margin-bottom: 20px;
+  }
+
+  .caption {
+    display: block;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 10px;
+  }
+
+
+  .project_desc {
+    display: block;
+  }
+
+  #portfolio_bar {
+    background-color: white;
+    margin: 50px 100px 50px 100px;
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 10px 25px 25px 25px;
+  }
+
+  #portfolio_bar img{
+    float: left;
+    margin: 10px;
+    margin-top: 58px;
+  }
+
+  #portfolio_bar h1 {
+    font-family: 'Quantico', sans-serif;
+    font-weight: 700;
+  }
+
+  #portfolio_bar h3 {
+    font-family: 'Quantico', sans-serif;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  #portfolio_bar p {
+    text-align: left;
+  }
+
+  #contact_bar {
+    background-color: white;
+    margin: 50px 100px 50px 100px;
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 10px 25px 25px 25px;
+  }
+
+  #contact_bar h1 {
+    font-family: 'Quantico', sans-serif;
+    font-weight: 700;
+  }
+
+  #resume_bar {
+    background-color: white;
+    margin: 50px 100px 50px 100px;
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 10px 25px 25px 25px;
+  }
+
+  #resume_bar h1 {
+    font-family: 'Quantico', sans-serif;
+    font-weight: 700;
+  }
+
+  text, p {
+    font-size: 1.5em;
+    font-family: arial;
+  }
+
+  .icons span {
+    font-family: arial;
+  }
+}
